@@ -1,0 +1,113 @@
+.tools {
+
+  &__row {
+    display: flex;
+    margin: 0 -15px;
+
+    @include tablet-and-phone {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__col {
+    padding: 0 15px;
+    width: 33.33333%;
+
+    @include tablet-and-phone {
+      width: 100%;
+    }
+  }
+
+  &__item {
+    @include tablet-and-phone {
+      margin-bottom: 20px;
+    }
+
+    @include mobile {
+      padding: 0 15px;
+    }
+
+    ._title {
+      position: relative;
+      padding-left: 50px;
+      color: white;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 300;
+      font-size: 30px;
+
+      @include tablet-and-phone {
+        font-size: 25px;
+      }
+    }
+
+    ._desc {
+      padding-top: 20px;
+      color: white;
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 30px;
+
+      @include tablet-and-phone {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  &-view {
+
+  }
+
+  &-catalog {
+    margin: 20px -30px 0;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &-catalog__item {
+    padding: 0 30px;
+
+    .item__img {
+
+    }
+  }
+
+  .icon {
+    &:after {
+      position: absolute;
+      content: '';
+      width: 45px;
+      height: 46px;
+      left: 0;
+      top: -5px;
+    }
+
+    &_html {
+      &:after {
+        background: url("../../../content/svg/html-5.svg") no-repeat;
+      }
+    }
+
+    &_css {
+      &:after {
+        background: url("../../../content/svg/css-3.svg") no-repeat;
+      }
+    }
+
+    &_js {
+      &:after {
+        background: url("../../../content/svg/js.svg") no-repeat;
+      }
+    }
+  }
+
+  &-view__item {
+
+  }
+}
+
+
+

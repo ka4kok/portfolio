@@ -1,0 +1,47 @@
+.tools__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -15px; }
+
+.tools__col {
+  padding: 0 15px;
+  width: 33.33333%; }
+
+.tools__item ._title {
+  position: relative;
+  padding-left: 50px;
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  font-size: 30px; }
+
+.tools__item ._desc {
+  padding-top: 20px;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px; }
+
+.tools-view {
+  height: 100px;
+  background: yellow; }
+
+.tools .icon:after {
+  position: absolute;
+  content: '';
+  width: 45px;
+  height: 46px;
+  left: 0;
+  top: -5px; }
+
+.tools .icon_html:after {
+  background: url("../../../content/svg/html-5.svg") no-repeat; }
+
+.tools .icon_css:after {
+  background: url("../../../content/svg/css-3.svg") no-repeat; }
+
+.tools .icon_js:after {
+  background: url("../../../content/svg/js.svg") no-repeat; }

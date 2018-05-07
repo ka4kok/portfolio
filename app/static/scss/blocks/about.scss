@@ -1,0 +1,147 @@
+
+.about {
+  &__row {
+    display: flex;
+  }
+
+  &__col {
+    width: 50%;
+
+    @include tablet-and-phone {
+      width: 100%;
+    }
+  }
+
+  &__col-tablet {
+    @include tablet-and-phone {
+      display: none;
+    }
+  }
+
+  &__item-desc {
+    padding: 30px 45px 30px 30px;
+
+    @include tablet-and-phone {
+      padding: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__item {
+    height: 100%;
+
+    @include mobile {
+      padding: 0 15px;
+    }
+
+    .item {
+      &__title {
+        padding-left: 60px;
+        margin-bottom: 20px;
+        position: relative;
+
+        &:hover {
+          &:before {
+            transform: rotate(45deg);
+          }
+        }
+
+        &:before {
+          position: absolute;
+          content: '';
+          width: 45px;
+          height: 45px;
+          left: 0;
+          top: -7px;
+          background: $main-color;
+          transition: 0.5s;
+        }
+
+        h3 {
+          text-transform: uppercase;
+          font-family: 'Work Sans', sans-serif;
+          font-weight: 300;
+          font-size: 30px;
+
+          @include tablet-and-phone {
+            font-size: 25px;
+          }
+        }
+      }
+
+      &__text {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 30px;
+
+        p {
+          margin: 0;
+          line-height: 30px;
+
+          @include tablet-and-phone {
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
+
+        @include tablet-and-phone {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+
+      &__img {
+        height: 100%;
+      }
+
+      &__img_who {
+        background: url("../../../content/images/head1.jpeg") no-repeat center;
+        background-size: cover;
+      }
+
+      &__img_do {
+        background: url("../../../content/images/about1.jpg") no-repeat center;
+        background-size: cover;
+      }
+
+      &__img_facts {
+        background: url("../../../content/images/about3.jpg") no-repeat center;
+        background-size: cover;
+      }
+    }
+
+    .icon {
+      &:after {
+        position: absolute;
+        content: '';
+        width: 32px;
+        height: 32px;
+        left: 6px;
+        top: 0;
+      }
+
+      &_who {
+        &:after {
+          background: url("../../../content/svg/man.svg");
+        }
+      }
+
+      &_do {
+        &:after {
+          background: url("../../../content/svg/tool.svg");
+        }
+      }
+
+      &_facts {
+        &:after {
+          background: url("../../../content/svg/facts.svg");
+        }
+      }
+    }
+  }
+
+  ._blue {
+    color: $main-color;
+  }
+}

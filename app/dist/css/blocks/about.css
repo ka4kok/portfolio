@@ -1,0 +1,70 @@
+.about__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.about__col {
+  width: 50%; }
+
+.about__item-desc {
+  padding: 30px 45px 30px 30px; }
+
+.about__item {
+  height: 100%; }
+  .about__item .item__title {
+    padding-left: 60px;
+    margin-bottom: 20px;
+    position: relative; }
+    .about__item .item__title:hover:before {
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .about__item .item__title:before {
+      position: absolute;
+      content: '';
+      width: 45px;
+      height: 45px;
+      left: 0;
+      top: -7px;
+      background: #109bce;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
+    .about__item .item__title h3 {
+      text-transform: uppercase;
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 300;
+      font-size: 30px; }
+  .about__item .item__text {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px; }
+  .about__item .item__img {
+    height: 100%; }
+  .about__item .item__img_who {
+    background: url("../../../content/images/head1.jpeg") no-repeat center;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .about__item .item__img_do {
+    background: url("../../../content/images/about1.jpg") no-repeat center;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .about__item .item__img_facts {
+    background: url("../../../content/images/about3.jpg") no-repeat center;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .about__item .icon:after {
+    position: absolute;
+    content: '';
+    width: 32px;
+    height: 32px;
+    left: 6px;
+    top: 0; }
+  .about__item .icon_who:after {
+    background: url("../../../content/svg/man.svg"); }
+  .about__item .icon_do:after {
+    background: url("../../../content/svg/tool.svg"); }
+  .about__item .icon_facts:after {
+    background: url("../../../content/svg/facts.svg"); }

@@ -1,0 +1,122 @@
+.footer {
+  padding-bottom: 40px;
+
+  &__title {
+    text-align: center;
+    padding: 50px 0 60px;
+
+    .title_white {
+      color: white;
+    }
+
+    h2 {
+      color: $dark-color;
+      text-transform: uppercase;
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 300;
+      font-size: 45px;
+      position: relative;
+
+      @include tablet-and-phone {
+        font-size: 35px;
+      }
+
+      &:before {
+        position: absolute;
+        content: '';
+        width: 120px;
+        height: 2px;
+        top: 50px;
+        left: 50%;
+        margin-left: -60px;
+        background: $main-color;
+      }
+    }
+  }
+
+  &__body {
+    height: 300px;
+    width: 100%;
+  }
+
+  &__form {
+    width: 65%;
+    margin: 0 auto;
+
+    @include tablet-and-phone {
+      width: 100%;
+      padding: 0 15px;
+    }
+
+   .form {
+     &-row {
+        margin-bottom: 20px;
+
+       &:last-child {
+         margin-bottom: 0;
+       }
+     }
+
+     &-field {
+
+     }
+
+     &-input {
+       width: 100%;
+       display: block;
+       height: 35px;
+       padding: 20px;
+       font-size: 14px;
+       background: #1f2225;
+       border: none;
+       color: white;
+     }
+
+     &-area {
+       width: 100%;
+       display: block;
+       min-height: 150px;
+       border: none;
+       padding: 20px;
+       font-size: 14px;
+       background: #1f2225;
+       color: white;
+       resize: none;
+     }
+   }
+  }
+
+  &__btn {
+    text-align: center;
+
+    .btn {
+      background: $main-color;
+      color: white;
+      text-transform: uppercase;
+      display: inline-block;
+      vertical-align: middle;
+      cursor: pointer;
+      transition: .15s ease-in-out;
+      border: 1px solid transparent;
+      text-align: center;
+      padding: 8px 45px;
+      line-height: 1.5;
+      font-size: 20px;
+
+      @include tablet-and-phone {
+        font-size: 14px;
+        padding: 6px 30px;
+      }
+
+      &:hover {
+        box-shadow: 0 0 5px $main-color;
+      }
+    }
+  }
+
+  &__reserved {
+    margin-top: 30px;
+    color: #959595;
+    text-align: center;
+  }
+}

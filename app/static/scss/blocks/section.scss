@@ -1,0 +1,47 @@
+$main-color: #109bce;
+$dark-color: #191B1D;
+
+.section {
+  padding-bottom: 40px;
+
+  &__title {
+    text-align: center;
+    padding: 50px 0 60px;
+
+    .title_white {
+      color: white;
+    }
+
+    h2 {
+      color: $dark-color;
+      text-transform: uppercase;
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 300;
+      font-size: 45px;
+      position: relative;
+
+      @include tablet-and-phone {
+        font-size: 35px;
+      }
+
+      &:before {
+        position: absolute;
+        content: '';
+        width: 120px;
+        height: 2px;
+        top: 50px;
+        left: 50%;
+        margin-left: -60px;
+        background: $main-color;
+      }
+    }
+  }
+
+  &__body {
+
+  }
+}
+
+.bg-dark {
+  background: #191B1D;
+}

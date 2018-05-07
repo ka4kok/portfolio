@@ -1,0 +1,30 @@
+{
+  "name": "proj",
+  "version": "1.0.0",
+  "description": "proje",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-scss": "^1.4.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "headhesive": "^1.2.4",
+    "jquery": "^3.3.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "dependencies": {
+    "isotope-layout": "^3.0.6"
+  }
+}
